@@ -31,9 +31,9 @@ function calculate() {
     }
 
     else if (expression.includes("−")) {
-        let numbers = expression.split("−");
-        result = Number(numbers[0]) - Number(numbers[1]);
-    }
+    let numbers = expression.split("−");
+    result = Number(numbers[0]) - Number(numbers[1]);
+}
 
     else if (expression.includes("x")) {
         let numbers = expression.split("x");
@@ -44,13 +44,17 @@ function calculate() {
         let numbers = expression.split("÷");
 
         if (Number(numbers[1]) === 0) {
-            display.innerText = "Cannot divide by zero";
+            display.innerText = "Undefined";
             return;
         }
 
         result = Number(numbers[0]) / Number(numbers[1]);
     }
 
+    else if (expression.includes("%")) {
+        let numbers = expression.split("%");
+        result = Number(numbers[0]) % Number(numbers[1]);
+    }
 
     display.innerText = result;
 }
