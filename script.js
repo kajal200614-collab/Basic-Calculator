@@ -35,8 +35,8 @@ function calculate() {
         result = Number(numbers[0]) - Number(numbers[1]);
     }
 
-    else if (expression.includes("×")) {
-        let numbers = expression.split("×");
+    else if (expression.includes("x")) {
+        let numbers = expression.split("x");
         result = Number(numbers[0]) * Number(numbers[1]);
     }
 
