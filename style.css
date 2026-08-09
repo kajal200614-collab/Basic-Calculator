@@ -88,6 +88,7 @@ button:active {
     background: #ff9800;
 }
 
+
 @media (max-height: 700px) {
 
     .calculator {
@@ -120,6 +121,7 @@ button:active {
         font-size: 32px;
     }
 }
+
 
 @media (max-width: 400px) {
 
